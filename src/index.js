@@ -26,6 +26,7 @@ async function pokemonCard (id){
     console.log(pokemon);
     display(pokemon)
     // console.log(id + ' ' + pokemon.name);
+    
 }
 
 
