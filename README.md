@@ -36,6 +36,7 @@ Run 'npm run build' to build the code after editing it.
 - Twitter: [@mikemtzp](https://twitter.com/mikemtzp)
 - LinkedIn: [Miguel Martínez Prieto](https://www.linkedin.com/in/miguel-mart%C3%ADnez-prieto-a42406166/)
 
+### Menanya Morris
 - GitHub: [@Emmykage](https://github.com/Emmykage)
 - Twitter: [@emmykage](https://twitter.com/emmykage)
 - LinkedIn: [Menanya Morris](https://www.linkedin.com/in/morris-menanya-a51985104/)
