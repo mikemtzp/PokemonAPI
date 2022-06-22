@@ -1,18 +1,17 @@
-const url = "https://pokeapi.co/api/v2/pokemon/";
 import display from './display';
 
-async function pokemonCard (id){
-    const response = await fetch(url + id, {
-        method: 'GET',
-        header: {
-            'content-type': 'application/json; charset: UTF-8'}
-    })
+const url = 'https://pokeapi.co/api/v2/pokemon/';
 
-    const pokemon = await response.json();
+async function pokemonCard(id) {
+  const response = await fetch(url + id, {
+    method: 'GET',
+    header: { 'content-type': 'application/json; charset: UTF-8' },
+  });
 
-    console.log(pokemon);
-    display(pokemon)
-    // console.log(id + ' ' + pokemon.name);
+  const pokemon = await response.json();
 
+  console.log(pokemon);
+  display(pokemon);
+  // console.log(id + ' ' + pokemon.name);
 }
-export default pokemonCard
+export default pokemonCard;
