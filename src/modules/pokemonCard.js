@@ -13,4 +13,3 @@ async function pokemonCard(id) {
 }
 
 export default pokemonCard;
-
