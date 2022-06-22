@@ -127,6 +127,8 @@ span {
 .like {
   color: #003a70;
   cursor: pointer;
+  display: block;
+  font-size: 18px;
 }
 
 .like:hover {
