@@ -5,7 +5,7 @@ import pokemonCard from './modules/pokemonCard.js';
 
 const pokedex = 157;
 
-async function getPokemon() {
+const getPokemon = async () =>{
   for (let i = 1; i < pokedex; i += 1) {
     const id = [i];
     pokemonCard(id);
