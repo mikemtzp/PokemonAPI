@@ -3,7 +3,7 @@
 import './style.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 import pokemonCard from './modules/pokemonCard.js';
-import { generatePopUp } from './modules/comments-popup.js';
+import { addPopUp } from './modules/comments-popup.js';
 
 const pokedex = 10;
 
@@ -12,10 +12,7 @@ async function getPokemon() {
     const id = [i];
     await pokemonCard(id);
   }
-  const commentsBtn = document.querySelectorAll('.comments-btn');
-  commentsBtn.forEach((e) => {
-    e.addEventListener('click', generatePopUp);
-  });
+  addPopUp();
 }
 
 getPokemon();
