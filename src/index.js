@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/js/all.js';
 const row = document.querySelector('.row');
 const url = "https://pokeapi.co/api/v2/pokemon/";
 
-let pokedex = 150;
+let pokedex = 157;
 
 function getPokemon(){
     for(let i = 1; i<pokedex; i++){
