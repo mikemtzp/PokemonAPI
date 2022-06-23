@@ -3,10 +3,8 @@
 import './style.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 import pokemonCard from './modules/pokemonCard.js';
-import { addPopUp } from './modules/comments-popup.js';
+import { addPopUp, pokedex } from './modules/comments-popup.js';
 import { addComment } from './modules/add-comment.js';
-
-const pokedex = 10;
 
 async function getPokemon() {
   for (let i = 1; i < pokedex; i += 1) {

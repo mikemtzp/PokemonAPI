@@ -41,4 +41,4 @@ const addPopUp = () => {
   });
 };
 
-export { createPopUp, addPopUp };
+export { createPopUp, addPopUp, pokedex };
