@@ -120,8 +120,14 @@ footer {
   font-weight: bold;
 }
 
-span {
+.heart{
   margin-right: 28px;
+  /* background-color: gray; */
+  display: flex;
+}
+.likecount{
+  margin-left: 8px;
+  color: #d2def1;
 }
 
 .like {

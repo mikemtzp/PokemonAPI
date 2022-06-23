@@ -6,9 +6,9 @@ function display(pokemon) {
   divCol.innerHTML = `
     <img src=${pokemon.sprites.front_default}>
     
-    <div class="top"><h3>${pokemon.name}</h3><span> <i id="lk${pokemon.id}" class="like fa-solid fa-heart"></i> </span> </div>
+    <div class="top"><h3>${pokemon.name}</h3><span class="heart"> <i id="lk${pokemon.id}" class="like fa-solid fa-heart"></i><span class="likecount" id="span-${pokemon.id}">0</span </span> </div>
     <button> Comment</button>
-    <button> Reservation</button>
+    
 
     
     `;
