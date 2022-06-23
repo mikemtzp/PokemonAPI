@@ -1,10 +1,12 @@
+import commentsCounter from './counter-comments.js';
+
 const api = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/C3asvnkAr3QrWzXOJfVd/comments';
 const commentsList = document.getElementById('comments-list');
 
 const showComments = (data) => {
   let content = '';
   commentsList.innerHTML = '';
-  document.getElementById('title-comment').innerHTML = 'Comments';
+  document.getElementById('title-comment').innerHTML = `Comments(${commentsCounter(data)})`;
 
   if (data.length) {
     data.map((item) => {
@@ -31,6 +33,7 @@ const getComments = async (item) => {
     showComments(comments);
     // setTimeout(showComments(comments), 500);
   } else {
+    document.getElementById('title-comment').innerHTML = 'Comments(0)';
     commentsList.innerHTML = '<li class="no-comments">No comments available</li>';
   }
 };
