@@ -145,16 +145,26 @@ footer p {
   cursor: pointer;
 }
 
+.comments {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.no-comments {
+  text-align: center;
+}
+
 .popup-window {
-  display: block;
+  display: none;
   background-color: #fff;
   border: 5px solid #000;
   border-radius: 4px;
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: 30%;
 }
 
 .pokemon-info {
@@ -207,4 +217,12 @@ footer p {
   right: 5%;
   font-size: 2rem;
   cursor: pointer;
+}
+
+#appname {
+  background-color: #fff;
+  display: block;
+  width: 500px;
+  font-size: 2rem;
+  color: #000;
 }
