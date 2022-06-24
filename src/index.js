@@ -9,7 +9,7 @@ import { getLikes } from './modules/add-likes.js';
 import pokemonCounter from './modules/counter-items.js';
 import { loadLikeBtn } from './modules/display.js';
 
-async function getPokemon() {
+const getPokemon = async () => {
   for (let i = 1; i < pokedex; i += 1) {
     const id = [i];
     await pokemonCard(id);
@@ -17,7 +17,7 @@ async function getPokemon() {
   addPopUp();
   setTimeout(loadLikeBtn(), 2000);
   setTimeout(getLikes(), 2000);
-}
+};
 
 const form = document.getElementById('form');
 form.addEventListener('submit', (e) => {

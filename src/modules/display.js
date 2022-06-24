@@ -2,7 +2,7 @@ import { addLike } from './add-likes.js';
 
 const row = document.querySelector('.row');
 
-function display(pokemon) {
+const display = (pokemon) => {
   const divCol = document.createElement('div');
   divCol.classList.add('col');
   divCol.innerHTML = `
@@ -11,7 +11,7 @@ function display(pokemon) {
     <button id=comm${pokemon.id} class="comments-btn" type="button">Comment</button>    
     `;
   row.appendChild(divCol);
-}
+};
 
 const loadLikeBtn = () => {
   const likeBtn = document.querySelectorAll('.test1');
