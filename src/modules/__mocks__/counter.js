@@ -9,6 +9,13 @@ class Counter {
     if (!counter) counter === 0;
     return counter;
   };
+
+  pokemonCounter = (data) => {
+    if (data.length) {
+      return data.length;
+    }
+    return null;
+  };
 }
 
 export default Counter;
