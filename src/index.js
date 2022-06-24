@@ -1,5 +1,6 @@
 import './style.css';
 import '@fortawesome/fontawesome-free/js/all.js';
+import { getLikeCount } from './modules/involvementApi';
 import pokemonCard from './modules/pokemonCard.js';
 import { addlikes, pokedex } from './modules/likeCount.js';
 // import getKey from './modules/getApi';
@@ -11,14 +12,15 @@ import { addlikes, pokedex } from './modules/likeCount.js';
 
 const getPokemon = async () =>{
   // updateLikes();
-  // setTimeout((updateLikes), 1000);
+   const likes = await getLikeCount();
   for (let i = 1; i < pokedex; i += 1) {
     const id = [i];
-   await pokemonCard(id);
+     await pokemonCard(id,likes[i] );
   }
 
   addlikes()
-  // updateLikes();
+  
+  
 
 
  

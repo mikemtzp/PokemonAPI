@@ -19,36 +19,52 @@ likebtn.forEach(btn =>{
     const likeDisplay = document.querySelector(`#span-${btn.getAttribute('id')}`);
     likeDisplay.innerHTML = item.likes
     
-
+    console.log(response);
     
-    // for(let i=1; i<pokedex; i++){
-    //   let id= i;
-    //   // addLikeCount(id)
-  
-    //   if(e.target.id === id){
-    //     await addLikeCount(id);
-    //     updateLikes(btn);
-    //     // console.log(id)
-       
-    //      }
-    // }
+    
     
   })
 
-  async function updateLikes(btn){
-
-    console.log(response);
-  
-    const response = await getLikeCount();
-    response.find((element)=>{element.item_id === btn.id })
-    btn.textContent = response.likes;
-  
-  }
-
-  
-
 
 })
+}
+
+export async function updateLikes(){
+//   const response = await getLikeCount();
+// const btnLike = document.querySelectorAll('.likecount');
+// btnLike.forEach(async btn => {
+//   const item = await response.find(
+//     (poke) => {poke.item_id === parseInt(btn.getAttribute('id').slice(5))});
+//     if(item === undefined){
+//       item = {
+//         likes: 0
+//       } 
+//     }
+// console.log(btn.getAttribute('id').slice(5))
+//     btn.innerHTML = item.likes
+
+    // const likeDisplay = document.querySelector(`#span-${btn.getAttribute('id')}`)
+
+
+// })
+
+  
+  
+// const item = await response.find(
+//   (element) => element.item_id === btn.id );
+// if (item === undefined) {
+//   item.likes = 0
+//   };
+
+
+
+// return item
+
+
+
+
+
+
 
 }
 
@@ -68,6 +84,38 @@ likebtn.forEach(btn =>{
 
 
 
+
+
+
+
+
+
+
+
+
+// const item = await response.find(
+//   (element) => element.item_id === pokemon.id);
+// if (item === undefined) {
+//   item.likes = 0
+//   };
+
+ 
+
+// const likebtn = document.querySelectorAll(".likecount");
+// likebtn.forEach(async (btn) =>{
+  
+//     const response = await getLikeCount();
+  
+//     const likeDisplay = document.querySelector(`#span-${btn.getAttribute('id')}`);
+//     likeDisplay.innerHTML = item.likes
+    
+//     console.log(response);
+    
+    
+  
+// }
+
+// )
 
 
   // update likes
