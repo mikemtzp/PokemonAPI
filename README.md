@@ -1,4 +1,4 @@
-# Pokemon API
+# Pokémon API
 > This web app displays different Pokémon gotten from the RESTful [Pokémon API](https://pokeapi.co/) in which you can like your favorites. It also allows you to see further information about each Pokémon and leave a comment. All data is recorded thanks to the [Involvement API service](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270). Built with Javascript.
 
 ## 🛠️ Built With
