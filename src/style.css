@@ -136,7 +136,9 @@ footer {
   display: block;
   font-size: 18px;
 }
-
+.fa-heart{
+  /* z-index: -1; */
+}
 .like:hover {
   color: pink;
 }
