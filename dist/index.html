@@ -1,44 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/4ee8cfcba7.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4ee8cfcba7.js"
+      crossorigin="anonymous"
+    ></script>
     <title></title>
-<script defer src="main.js"></script></head>
-<body>
+  <script defer src="main.js"></script></head>
+  <body>
     <main>
-        <header>
-            <nav> 
-                <a class="logo"><img src="9ff397e546b3010eefd0.png"> </a>
-                <ul>
-                    <li><a href="#">PokeDex <span>(1)</span> </a></li>
-                    <li><a href="#">Adventures</a></li>
-                    <li><a href="#">PokeVerse</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <div class="container">
-                <div class="row"></div>
-            </div>
-           
-
-        </section>
-        <footer>  
-
-            <div class="container">
-                
-            <p>Created by Mike & Morris under MIT License... all rights reserved </p>
-         
-
-            </div>
-
-        </footer>
-
+      <header>
+        <nav>
+          <a class="logo"
+            ><img
+              src="9ff397e546b3010eefd0.png"
+          /></a>
+          <ul>
+            <li>
+              <a href="#">PokeDex <span>(1)</span></a>
+            </li>
+            <li><a href="#">Adventures</a></li>
+            <li><a href="#">PokeVerse</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <div id="appname"></div>
+        <div class="container">
+          <div class="row"></div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <p>
+            Created by Mike & Morris under MIT License... all rights reserved
+          </p>
+        </div>
+      </footer>
     </main>
-   
+
+    <div class="popup-window" id="popup-window">
+    <section class="pokemon-info">
+      <img class="pokemon-image" id="pokemon-image" src="2598b59e3b4a13b70ed7.png">
+      <span class="closebtn"><i id=btn class="fa-solid fa-xmark close-button"></i></span>
+      <h2 class="pokemon-name" id="pokemon-name"></h2>
+      <div class="pokemon-data" id="pokemon-data">
+      </div>
+      </section>
+      <section class="pokemon-comments">
+      <p class="section-title" id="title-comment">Comments(0)</p>
+      <ul class="comments" id="comments-list"></ul>
+      </section>
+      <form class="form" id="form">
+      <p class="section-title">Add a comment</p>
+      <input type="hidden" name="id" id="id">
+      <input class="input" type="text" name="name" value="" id="name" placeholder="Add your name" required>
+      <input class="input" type="text" name="comment" value="" id="comment" placeholder="Add your comment" required>
+      <button class="add-comment-btn" type="submit">Comment</button>
+      </form>
+    </div>
 
     <script src="c684cd7953c1d499e18c.js"></script>
-</body>
+  </body>
 </html>
