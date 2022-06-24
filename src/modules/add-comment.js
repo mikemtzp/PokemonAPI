@@ -31,7 +31,6 @@ const getComments = async (item) => {
   if (response.status !== 400) {
     const comments = await response.json();
     showComments(comments);
-    // setTimeout(showComments(comments), 500);
   } else {
     document.getElementById('title-comment').innerHTML = 'Comments(0)';
     commentsList.innerHTML = '<li class="no-comments">No comments available</li>';
@@ -52,7 +51,6 @@ const addComment = async (item, username, comment) => {
     },
   });
   getComments(item);
-  // setTimeout(getComments(item), 500);
 };
 
 export { addComment, getComments };
