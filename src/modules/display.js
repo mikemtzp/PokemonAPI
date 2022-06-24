@@ -1,5 +1,4 @@
-import { getLikeCount } from "./involvementApi.js";
-import { updateLikes } from "./likeCount.js";
+
 const row = document.querySelector('.row');
 async function display(pokemon,like) {
 

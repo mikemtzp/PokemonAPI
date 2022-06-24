@@ -1,4 +1,4 @@
-// const APPID = 'Bmi44uZpO8wqWlkUIukm'
+const APPID = 'Bmi44uZpO8wqWlkUIukm'
 const getKey = async () => {
     const response = await fetch(
       'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/',
@@ -13,6 +13,6 @@ const getKey = async () => {
     console.log(key);
   };
 
-  // getKey();
+  getKey();
 
   export default getKey;

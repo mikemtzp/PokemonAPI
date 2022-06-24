@@ -1,5 +1,4 @@
-
-const APPID = 'LiWb7W0aj2Yzrg1uCnEA';
+const APPID ='uOy7DSaMDz6TxcZM79iV'
 const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/'
 async function addLikeCount (itemID){
     const response = await fetch(`${url}${APPID}/likes`, {
@@ -23,13 +22,7 @@ async function addLikeCount (itemID){
 
 
 async function getLikeCount(){
-    const response = await fetch (`${url}${APPID}/likes`, {
-        method: 'GET',
-        headers: {
-            'content-type': 'application/json',
-        },
-        
-    })
+    const response = await fetch (`${url}${APPID}/likes`)
    const  getLikes = await response.json()
    return getLikes
 }
