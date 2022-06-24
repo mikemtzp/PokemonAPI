@@ -10,6 +10,8 @@
 
 ## 🧮 Prerequisites
 
+## 📹 [Video documentation](https://www.loom.com/share/febaae743e004d9aa35818b252fdca95)
+
 ### Setup
 
 Follow these steps on your console to properly clone this repository on your desktop:
