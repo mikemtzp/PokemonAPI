@@ -24,6 +24,26 @@ const getPokemon = async () =>{
   
 }
 
+const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/'
+async function addL (){
+    const response = await fetch(url, {
+
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        
+    });
+   const addedLike = await response.text();
+
+  
+
+   console.log(JSON.parse(addedLike))
+
+   return addedLike
+
+}
+addL()
 getPokemon();
 
 

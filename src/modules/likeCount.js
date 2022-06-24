@@ -7,19 +7,19 @@ export function  addlikes(){
   const likebtn = document.querySelectorAll(".heart");
 likebtn.forEach(btn =>{
   btn.addEventListener("click", async function(){
-    await addLikeCount(btn.getAttribute('id'));
+    await addLikeCount(parseInt(btn.getAttribute('id')));
+    
 
     // update like display
     const response = await getLikeCount();
     const item = response.find(
-      (element) => element.item_id === btn.getAttribute('id'),
-    );
+      (element) => element.item_id === parseInt(btn.getAttribute('id')),
+       );
     const likeDisplay = document.querySelector(`#span-${btn.getAttribute('id')}`);
-    likeDisplay.innerHTML = item.likes
-    
-       
-    
-  })
+    likeDisplay.innerHTML = item.likes;
+    console.log(response);
+     })
+  
 
 
 })

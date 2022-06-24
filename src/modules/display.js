@@ -16,7 +16,7 @@ async function display(pokemon,like) {
   divCol.innerHTML = `
     <img src=${pokemon.sprites.front_default}>
     
-    <div class="top"><h3>${pokemon.name}</h3><span id="${pokemon.id}" class="heart"> <i  class="like fa-solid fa-heart"></i><span class="likecount ${pokemon.id}" id="span-${pokemon.id}">${like.likes}</span </span> </div>
+    <div class="top"><h3>${pokemon.name}</h3><span id=${pokemon.id} class="heart"> <i  class="like fa-solid fa-heart"></i><span class="likecount ${pokemon.id}" id="span-${pokemon.id}">${like.likes}</span </span> </div>
     <button> Comment</button>
     
 
