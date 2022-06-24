@@ -1,7 +1,7 @@
 import { getComments } from './add-comment.js';
 
 const url = 'https://pokeapi.co/api/v2/pokemon/';
-const pokedex = 10;
+const pokedex = 152;
 
 const createPopUp = (pokemon) => {
   document.getElementById('pokemon-image').src = pokemon.sprites.front_default;
