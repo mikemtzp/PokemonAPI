@@ -1,4 +1,4 @@
-import display from './display.js';
+import { display } from './display.js';
 
 const url = 'https://pokeapi.co/api/v2/pokemon/';
 

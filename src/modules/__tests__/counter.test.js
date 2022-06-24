@@ -25,3 +25,20 @@ describe('Test counter for comment popup', () => {
     expect(counter.commentsCounter(mewtwo)).toBe(3);
   });
 });
+
+const nullData = [];
+const data = [
+  { id: 1, name: 'ditto', ability: 'copy' },
+  { id: 2, name: 'articuno', ability: 'ice-beam' },
+  { id: 3, name: 'moltres', ability: 'fireblast' },
+  { id: 4, name: 'zapdos', ability: 'thunderbolt' },
+];
+
+describe('Test for items counter', () => {
+  test('Page contains 2 pokemon', () => {
+    expect(counter.pokemonCounter(data)).toBe(4);
+  });
+  test('Page contains 0 pokemons', () => {
+    expect(counter.pokemonCounter(nullData)).toBe(null);
+  });
+});
