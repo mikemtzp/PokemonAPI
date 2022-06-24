@@ -6,44 +6,32 @@ import { addlikes, pokedex } from './modules/likeCount.js';
 import count from './modules/counter';
 /* eslint-disable no-await-in-loop */
 
-
-
-
-
-const getPokemon = async () =>{
-   count();
-   const likes = await getLikeCount();
+const getPokemon = async () => {
+  count();
+  const likes = await getLikeCount();
   for (let i = 1; i < pokedex; i += 1) {
     const id = [i];
-    await pokemonCard(id,likes[i] );
+    await pokemonCard(id, likes[i]);
   }
 
-  addlikes()
-  
+  addlikes();
+};
 
-  
+const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
+async function addL() {
+  const response = await fetch(url, {
+
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+
+  });
+  const addedLike = await response.text();
+
+  console.log(JSON.parse(addedLike));
+
+  return addedLike;
 }
-
-const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/'
-async function addL (){
-    const response = await fetch(url, {
-
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        
-    });
-   const addedLike = await response.text();
-
-  
-
-   console.log(JSON.parse(addedLike))
-
-   return addedLike
-
-}
-addL()
+addL();
 getPokemon();
-
-

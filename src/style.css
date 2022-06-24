@@ -49,7 +49,6 @@ li a {
   padding: 0;
   width: 120px;
   height: 105px;
-
 }
 
 img {
@@ -85,7 +84,6 @@ img {
   width: 100%;
   background-color: #003a70;
   margin: 0;
-
 }
 
 h3 {
@@ -120,12 +118,14 @@ footer {
   font-weight: bold;
 }
 
-.heart{
+.heart {
   margin-right: 28px;
+
   /* background-color: gray; */
   display: flex;
 }
-.likecount{
+
+.likecount {
   margin-left: 8px;
   color: #d2def1;
 }
@@ -136,9 +136,11 @@ footer {
   display: block;
   font-size: 18px;
 }
-.fa-heart{
+
+.fa-heart {
   /* z-index: -1; */
 }
+
 .like:hover {
   color: pink;
 }

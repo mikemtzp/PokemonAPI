@@ -1,8 +1,8 @@
 class Counter {
-    constructor(data) {
-      this.data = data;
-    }
-  
+  constructor(data) {
+    this.data = data;
+  }
+
     counter = (pokedex) => {
       const array = ['bulbasaur', 'ivysaur', 'venusaur', 'charmander', 'charmeleon', 'charizard'];
       let count = 0;
@@ -12,5 +12,5 @@ class Counter {
       }
       return pokedex;
     };
-  }
-  module.exports = Counter;
+}
+module.exports = Counter;

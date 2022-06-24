@@ -1,10 +1,10 @@
-import { pokedex } from "./likeCount";
+import { pokedex } from './likeCount';
 
 const counter = document.querySelector('.counter');
-function count(){
-        for(let i = 1; i<pokedex; i+= 1){
-       counter.innerHTML = `(${i})`;
-    }
+function count() {
+  for (let i = 1; i < pokedex; i += 1) {
+    counter.innerHTML = `(${i})`;
+  }
 }
 
-export default count 
+export default count;

@@ -1,32 +1,29 @@
-const APPID = 'uOy7DSaMDz6TxcZM79iV'
+const APPID = 'uOy7DSaMDz6TxcZM79iV';
 
-const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/'
-async function addLikeCount (itemID){
-    const response = await fetch(`${url}${APPID}/likes`, {
+const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
+async function addLikeCount(itemID) {
+  const response = await fetch(`${url}${APPID}/likes`, {
 
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ item_id: itemID }),
-      
-    });
-   const addedLike = await response.text();
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ item_id: itemID }),
 
-   console.log(itemID)
+  });
+  const addedLike = await response.text();
 
-   console.log(addedLike)
+  console.log(itemID);
 
-   return addedLike
+  console.log(addedLike);
 
+  return addedLike;
 }
 
-
-async function getLikeCount(){
-    const response = await fetch (`${url}${APPID}/likes`)
-   const  getLikes = await response.json()
-   return getLikes
+const  getLikeCount = async() => {
+  const response = await fetch(`${url}${APPID}/likes`);
+  const getLikes = await response.json();
+  return getLikes;
 }
 
-
-export {addLikeCount, getLikeCount}
+export { addLikeCount, getLikeCount };

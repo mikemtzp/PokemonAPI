@@ -1,30 +1,24 @@
-import { addLikeCount, getLikeCount } from "./involvementApi";
+import { addLikeCount, getLikeCount } from './involvementApi';
+
 export const pokedex = 110;
 
+export function addlikes() {
+  const likebtn = document.querySelectorAll('.heart');
+  likebtn.forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      await addLikeCount(parseInt(btn.getAttribute('id')));
 
-
-export function  addlikes(){
-  const likebtn = document.querySelectorAll(".heart");
-likebtn.forEach(btn =>{
-  btn.addEventListener("click", async function(){
-    await addLikeCount(parseInt(btn.getAttribute('id')));
-    
-
-    // update like display
-    const response = await getLikeCount();
-    const item = response.find(
-      (element) => element.item_id === parseInt(btn.getAttribute('id')),
-       );
-    const likeDisplay = document.querySelector(`#span-${btn.getAttribute('id')}`);
-    likeDisplay.innerHTML = item.likes;
-    console.log(response);
-     })
-  
-
-
-})
+      // update like display
+      const response = await getLikeCount();
+      const item = response.find(
+        (element) => element.item_id === parseInt(btn.getAttribute('id')),
+      );
+      const likeDisplay = document.querySelector(`#span-${btn.getAttribute('id')}`);
+      likeDisplay.innerHTML = item.likes;
+      console.log(response);
+    });
+  });
 }
-
 
 export const updateLikes = async () => {
   const response = await getLikeCount();
@@ -36,4 +30,3 @@ export const updateLikes = async () => {
     }
   });
 };
-

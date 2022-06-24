@@ -1,14 +1,10 @@
-
 const row = document.querySelector('.row');
-async function display(pokemon,like) {
-
-  if(like === undefined){
+async function display(pokemon, like) {
+  if (like === undefined) {
     like = {
-      likes: 0
-    } 
+      likes: 0,
+    };
   }
-
-  
 
   const divCol = document.createElement('div');
   divCol.classList.add('col');
@@ -25,7 +21,6 @@ async function display(pokemon,like) {
   row.appendChild(divCol);
 }
 export default display;
-
 
 // const response = await getLikeCount();
 // const item = await response.find(
