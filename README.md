@@ -60,4 +60,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-[MIT License](https://github.com/mikemtzp/PokemonAPI/blob/master/MIT.md)
+[MIT License](https://github.com/mikemtzp/PokemonAPI/blob/dev/LICENSE)
