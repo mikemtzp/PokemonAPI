@@ -9,6 +9,8 @@
 - Babel
 - Linters: Lighthouse, Webhint, Stylelint & ESlint
 
+## 💻 [Live demo](https://mikemtzp.github.io/PokemonAPI/dist/)
+
 ## 📹 [Video documentation](https://www.loom.com/share/febaae743e004d9aa35818b252fdca95)
 
 ## 🧮 Prerequisites
