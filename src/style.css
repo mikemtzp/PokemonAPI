@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  background-image: url(./images/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.webp);
+}
+
+header,
+section,
+footer {
+  width: 100%;
+}
+
+header {
+  background-color: #003a70;
+}
+
+nav {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin: auto 18px;
+}
+
+li a {
+  color: aliceblue;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.logo {
+  padding: 0;
+  width: 120px;
+  height: 105px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.row {
+  margin-top: 58px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.col {
+  padding: 0;
+  flex-basis: 25%;
+  overflow: hidden;
+  background-color: #957700;
+  margin-bottom: 18px;
+  border-radius: 10%;
+  text-align: center;
+  border: 1px solid black;
+  height: 90%;
+}
+
+.col img {
+  width: 100%;
+  background-color: #003a70;
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 18px;
+  margin-left: 18px;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  display: block;
+  margin: auto;
+  padding: 5px 15px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #d2def1;
+  color: #003a70;
+}
+
+button:active {
+  color: #d2def1;
+  background-color: #003a70;
+}
+
+footer {
+  padding: 34px;
+  background-color: #003a70;
+  font-weight: bold;
+}
+
+span {
+  margin-right: 28px;
+}
+
+.like {
+  color: #003a70;
+  cursor: pointer;
+}
+
+.like:hover {
+  color: pink;
+}
+
+.like:active {
+  color: #d2def1;
+}
+
+footer .container {
+  padding: 24px;
+}
+
+footer p {
+  color: aliceblue;
+}
+
+.comments-btn {
+  cursor: pointer;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.no-comments {
+  text-align: center;
+}
+
+.popup-window {
+  display: none;
+  background-color: #fff;
+  border: 5px solid #000;
+  border-radius: 4px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+.pokemon-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #957700;
+  text-align: center;
+}
+
+.pokemon-image {
+  background-color: #fff;
+  width: 100%;
+}
+
+.pokemon-name {
+  font-size: 2.5rem;
+}
+
+.pokemon-comments {
+  background-color: #003a70;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.input {
+  margin-bottom: 1rem;
+}
+
+.add-comment-btn {
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#appname {
+  background-color: #fff;
+  display: block;
+  width: 500px;
+  font-size: 2rem;
+  color: #000;
+}
