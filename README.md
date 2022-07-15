@@ -40,7 +40,7 @@ Run 'npm run build' to build the code after editing it.
 
 - GitHub: [@mikemtzp](https://github.com/mikemtzp)
 - Twitter: [@mikemtzp](https://twitter.com/mikemtzp)
-- LinkedIn: [Miguel Martínez Prieto](https://www.linkedin.com/in/mike-mart%C3%ADnez/)
+- LinkedIn: [Mike Martínez](https://www.linkedin.com/in/mike-mart%C3%ADnez/)
 
 ### Menanya Morris
 - GitHub: [@Emmykage](https://github.com/Emmykage)
